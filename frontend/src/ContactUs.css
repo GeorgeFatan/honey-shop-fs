@@ -1,0 +1,111 @@
+/* Containerul principal al paginii de Contact */
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Caseta de antet (Titlu + Subtitlu) */
+.contact-header {
+  text-align: center;
+  margin-bottom: 35px;
+  background-color: #ffffff; /* Alb solid, luminos */
+  padding: 20px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0e2b6;
+}
+
+.contact-title {
+  color: #111111;
+  margin: 0 0 8px 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.contact-subtitle {
+  color: #b38b00;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Grila cu cardurile de contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Link-urile care înfășoară cardurile interactive */
+.contact-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+/* Cardul alb solid */
+.contact-card {
+  background-color: #ffffff; /* Alb solid pentru a nu trece fundalul întunecat prin el */
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #f0e2b6;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efect de hover pe carduri */
+.contact-card-link:hover .contact-card {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Cerc cu pictograma/iconița */
+.contact-icon-wrapper {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  background-color: #fffdf0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f2e3b6;
+}
+
+.contact-card-title {
+  color: #222222;
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+}
+
+.contact-card-value {
+  color: #b38b00;
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin: 0 0 6px 0;
+  word-break: break-word;
+}
+
+.contact-card-subtext {
+  color: #666666;
+  font-size: 0.85rem;
+}
