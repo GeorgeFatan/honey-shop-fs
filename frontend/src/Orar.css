@@ -1,0 +1,62 @@
+/* Containerul pentru cardul cu orarul (semi-transparent) */
+.orar-content {
+  background-color: rgba(255, 255, 255, 0.85); /* Fundal alb cu 85% opacitate */
+  padding: 40px;
+  border-radius: 15px; /* Colțuri rotunjite */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Umbră elegantă */
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.orar-content h1 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+}
+
+/* Stiluri pentru lista orarului */
+.orar-list {
+  list-style-type: none; /* Ascunde punctele listei */
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.orar-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* O linie subtilă între zile */
+  display: flex;
+  justify-content: space-between; /* Pune ziua în stânga și ora în dreapta */
+}
+
+.orar-list li:last-child {
+  border-bottom: none; /* Fără linie la ultimul element */
+}
+
+.orar-list .inchis {
+  color: #c0392b; /* O culoare ușor roșiatică pentru zilele închise */
+}
+
+/* Stiluri pentru butonul de întoarcere 
+.back-link-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #d4af37; /* Auriu/Miere 
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.back-link-button:hover {
+  background-color: #b3912b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+*/

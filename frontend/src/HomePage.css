@@ -147,3 +147,33 @@ body {
   text-align: center;
   padding-right: 40px;
 }
+
+
+/* Stiluri pentru butonul-link către Orar 
+.orar-link-button {
+  display: inline-block;
+  margin-top: 20px; /* Spațiu între text și buton 
+  padding: 12px 24px;
+  background-color: #d4af37; /* Culoare aurie, asemănătoare mierii 
+  color: #fff;
+  text-decoration: none; /* Elimină sublinierea textului 
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px; /* Colțuri rotunjite 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* O mică umbră pentru adâncime 
+  transition: all 0.3s ease; /* Animație fină la hover 
+}
+
+/* Efect la trecerea mouse-ului peste buton 
+.orar-link-button:hover {
+  background-color: #b3912b; /* O nuanță de auriu mai închisă la hover 
+  transform: translateY(-2px); /* Butonul se ridică ușor 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Umbra devine mai pronunțată 
+}
+
+/* Efect la apăsarea butonului 
+.orar-link-button:active {
+  transform: translateY(0); /* Butonul revine la poziția inițială 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+*/

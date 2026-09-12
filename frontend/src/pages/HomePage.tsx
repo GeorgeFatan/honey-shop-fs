@@ -1,5 +1,6 @@
 import "../HomePage.css";
 import backgroundImageHoney from "../assets/backgroundImageHoney.jpg";
+//import { Link } from "react-router-dom"; // 1. Importăm Link care ne ajuta sa adaugam butoane pe pagina.
 
 export default function HomePage() {
   return (
@@ -21,6 +22,12 @@ export default function HomePage() {
           Miere naturală, direct din stupii noștri, produsă cu grijă în inima
           Sibiului.
         </p>
+        
+        {/* 2. Adăugăm link-ul către pagina de orar */}
+       {/* {/* 2. Adăugăm link-ul către pagina de orar 
+        <Link to="/orar" className="orar-link-button">
+          Vezi Orarul de Funcționare
+        </Link>*/}
       </section>
 
       {/* PRODUCTS SECTION */}
