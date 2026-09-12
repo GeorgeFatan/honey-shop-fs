@@ -3,15 +3,19 @@ import { Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import Orar from "./pages/Orar";
 import ContactUs from "./pages/ContactUs";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/orar" element={<Orar />} />
-      <Route path="/contact" element={<ContactUs />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/orar" element={<Orar />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </>
   );
 }
 
