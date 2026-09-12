@@ -1,0 +1,124 @@
+/* CONTAINER GENERAL */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTAINER INTERIOR */
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* LOGO + TITLU */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(249, 217, 122, 0.6);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f9d97a;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 6px rgba(249, 217, 122, 0.4);
+}
+
+/* LINKURI DESKTOP */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid rgba(249, 217, 122, 0.5);
+  border-radius: 6px;
+  background: rgba(249, 217, 122, 0.15);
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background: #f9d97a;
+  color: #333;
+  box-shadow: 0 0 10px rgba(249, 217, 122, 0.6);
+}
+
+/* HAMBURGER BUTTON (pentru mobil) */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #f9d97a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    width: 80%;
+    text-align: center;
+  }
+}

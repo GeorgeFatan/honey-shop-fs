@@ -1,19 +1,28 @@
 /* Containerul pentru cardul cu orarul (semi-transparent) */
 .orar-content {
-  background-color: rgba(255, 255, 255, 0.85); /* Fundal alb cu 85% opacitate */
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.12); /* același fundal translucid */
+  backdrop-filter: blur(4px); /* efect de sticlă mată */
+  border-radius: 10px;
   padding: 40px;
-  border-radius: 15px; /* Colțuri rotunjite */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Umbră elegantă */
-  text-align: center;
-  max-width: 400px;
   width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* umbră elegantă */
+  transition: transform 0.3s ease;
+}
+
+.orar-content:hover {
+  transform: scale(1.05); /* efect de hover ca la cardurile de produse */
 }
 
 .orar-content h1 {
-  color: #333;
+  color: #f9d97a;
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 2.2rem;
+  text-shadow: 0 0 6px rgba(249, 217, 122, 0.6);
 }
 
 /* Stiluri pentru lista orarului */
@@ -22,7 +31,7 @@
   padding: 0;
   margin: 0 0 30px 0;
   font-size: 1.2rem;
-  color: #444;
+  color: #f9d97a;
 }
 
 .orar-list li {
@@ -30,14 +39,16 @@
   border-bottom: 1px solid #ddd; /* O linie subtilă între zile */
   display: flex;
   justify-content: space-between; /* Pune ziua în stânga și ora în dreapta */
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* claritate și contrast */
 }
 
 .orar-list li:last-child {
-  border-bottom: none; /* Fără linie la ultimul element */
+  border-bottom: none; /*no white line under the last elem from the list */
 }
 
 .orar-list .inchis {
-  color: #c0392b; /* O culoare ușor roșiatică pentru zilele închise */
+  color: #ce200d; /* O culoare ușor roșiatică pentru zilele închise */
+  font-weight: 500;
 }
 
 /* Stiluri pentru butonul de întoarcere 
@@ -60,3 +71,18 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 */
+
+.orar-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f9f3d1;
+  overflow: hidden;
+}
+
+.orar-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* efect intunecat*/
+  z-index: 0;
+}
