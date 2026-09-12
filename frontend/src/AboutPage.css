@@ -1,0 +1,78 @@
+/* Containerul principal pe tot ecranul */
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Cardul alb - alb solid, identic ca luminozitate cu cel din Orar */
+.about-card {
+  background-color: #ffffff; /* Alb curat, nu mai lasă fondul închis să treacă prin el */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-title {
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+}
+
+.about-subtitle {
+  color: #b38b00; /* Auriu vizibil */
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+}
+
+.about-text p {
+  color: #333333;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* Cele 3 casete - fundal galben-miere deschis și luminos */
+.about-highlights {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf8ec; /* Culoare deschisă crem/galben */
+  border: 1px solid #f0e2b6;
+  padding: 15px 10px;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.highlight-item span {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.highlight-item strong {
+  color: #222222;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.highlight-item small {
+  color: #555555;
+  font-size: 0.8rem;
+}
