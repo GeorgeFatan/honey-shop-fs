@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImageHoney from "../assets/backgroundImageHoney.jpg";
+import backgroundImageHoney from "../assets/backgroundImageBuna.png";
 import "../ContactUs.css";
 
 interface ContactItem {

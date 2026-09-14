@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../Navbar.css";
+import logoBogdan from "../assets/LogoBogdan.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,14 +11,17 @@ export default function Navbar() {
         {/* LOGO + TITLU */}
         <div className="navbar-left">
           <div className="navbar-brand">
-            <img
-              src="/logo.png"
-              alt="Bogdan Miere Logo"
-              className="navbar-logo"
-            />
-            <span style={{ marginRight: "10px" }} className="navbar-title">
-              <a href="/">Bogdan Miere</a>
-            </span>
+            <a href="/">
+              <img
+                src={logoBogdan}
+                alt="Bogdan Miere Logo"
+                className="navbar-logo"
+              />
+            </a>
+            <span
+              style={{ marginRight: "10px" }}
+              className="navbar-title"
+            ></span>
           </div>
         </div>
 

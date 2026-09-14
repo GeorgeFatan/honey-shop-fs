@@ -1,4 +1,4 @@
-import backgroundImageHoney from "../assets/backgroundImageHoney.jpg";
+import backgroundImageHoney from "../assets/backgroundImageBuna.png";
 import "../Orar.css"; // Importăm fișierul de stiluri
 
 export default function Orar() {
