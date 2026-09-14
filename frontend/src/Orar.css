@@ -1,20 +1,41 @@
-/* Containerul pentru cardul cu orarul (semi-transparent) */
+/* Containerul principal al paginii Orar */
+.orar-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Overlay-ul întunecat pentru lizibilitate */
+.orar-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Cardul cu orarul (semi-transparent) */
 .orar-content {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.12); /* același fundal translucid */
-  backdrop-filter: blur(4px); /* efect de sticlă mată */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
   border-radius: 10px;
   padding: 40px;
   width: 90%;
   max-width: 400px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* umbră elegantă */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 233, 160, 0.3);
 }
 
 .orar-content:hover {
-  transform: scale(1.05); /* efect de hover ca la cardurile de produse */
+  transform: scale(1.03);
 }
 
 .orar-content h1 {
@@ -27,62 +48,26 @@
 
 /* Stiluri pentru lista orarului */
 .orar-list {
-  list-style-type: none; /* Ascunde punctele listei */
+  list-style-type: none;
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0;
   font-size: 1.2rem;
   color: #f9d97a;
 }
 
 .orar-list li {
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
-  justify-content: space-between; /* Pune ziua în stânga și ora în dreapta */
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* claritate și contrast */
+  justify-content: space-between;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .orar-list li:last-child {
-  border-bottom: none; /*no white line under the last elem from the list */
+  border-bottom: none;
 }
 
 .orar-list .inchis {
-  color: #ce200d; /* O culoare ușor roșiatică pentru zilele închise */
-  font-weight: 500;
-}
-
-/* Stiluri pentru butonul de întoarcere 
-.back-link-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #d4af37; /* Auriu/Miere 
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.back-link-button:hover {
-  background-color: #b3912b;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-*/
-
-.orar-container {
-  position: relative;
-  min-height: 100vh;
-  background-color: #f9f3d1;
-  overflow: hidden;
-}
-
-.orar-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* efect intunecat*/
-  z-index: 0;
+  color: #ff6b6b;
+  font-weight: 600;
 }

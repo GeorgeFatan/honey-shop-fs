@@ -1,21 +1,8 @@
-import backgroundImageHoney from "../assets/backgroundImageBuna.png";
-import "../Orar.css"; // Importăm fișierul de stiluri
+import "../Orar.css";
 
 export default function Orar() {
   return (
-    <div
-      className="orar-container"
-      style={{
-        backgroundImage: `url(${backgroundImageHoney})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="orar-container">
       <div className="orar-content">
         <h1>Orar de lucru</h1>
 
@@ -42,11 +29,6 @@ export default function Orar() {
             <strong>Duminică:</strong> Închis
           </li>
         </ul>
-
-        {/*
-        <Link to="/" className="back-link-button">
-          Înapoi la Pagina Principală
-        </Link>*/}
       </div>
     </div>
   );

@@ -4,10 +4,11 @@ import AboutPage from "./pages/AboutPage";
 import Orar from "./pages/Orar";
 import ContactUs from "./pages/ContactUs";
 import Navbar from "./components/Navbar";
+import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -15,7 +16,7 @@ function App() {
         <Route path="/orar" element={<Orar />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
