@@ -36,7 +36,7 @@
 
 .orar-list li {
   padding: 10px 0;
-  border-bottom: 1px solid #ddd; /* O linie subtilă între zile */
+  border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between; /* Pune ziua în stânga și ora în dreapta */
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* claritate și contrast */

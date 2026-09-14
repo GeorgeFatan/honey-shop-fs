@@ -10,7 +10,6 @@ body {
   position: relative;
   font-family: "Segoe UI", sans-serif;
   color: #fff;
-  background-image: url("../assets/backgroundImageHoney.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -91,6 +90,8 @@ body {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .product-card h3 {
@@ -147,7 +148,6 @@ body {
   text-align: center;
   padding-right: 40px;
 }
-
 
 /* Stiluri pentru butonul-link către Orar 
 .orar-link-button {

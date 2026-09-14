@@ -8,26 +8,40 @@
   box-sizing: border-box;
 }
 
+.about-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
 /* Cardul alb - alb solid, identic ca luminozitate cu cel din Orar */
 .about-card {
-  background-color: #ffffff; /* Alb curat, nu mai lasă fondul închis să treacă prin el */
+  background: rgba(255, 255, 255, 0.12);
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   max-width: 650px;
   width: 100%;
   text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.about-card:hover {
+  transform: scale((1.05));
 }
 
 .about-title {
-  color: #222222;
+  color: #f9d97a;
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 2.2rem;
+  text-shadow: 0 0 6px rgba(249, 217, 122, 0.6);
 }
 
 .about-subtitle {
-  color: #b38b00; /* Auriu vizibil */
+  color: #eee; /* Auriu vizibil */
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 24px;
@@ -35,7 +49,7 @@
 }
 
 .about-text p {
-  color: #333333;
+  color: #eee;
   line-height: 1.7;
   font-size: 1.05rem;
   margin-bottom: 16px;
@@ -50,11 +64,15 @@
   margin-top: 30px;
 }
 
+.about-highlights:hover {
+  transform: scale((1.05));
+}
+
 .highlight-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fcf8ec; /* Culoare deschisă crem/galben */
+  background: rgba(255, 255, 255, 0.12); /* Culoare deschisă crem/galben */
   border: 1px solid #f0e2b6;
   padding: 15px 10px;
   border-radius: 12px;
@@ -67,12 +85,12 @@
 }
 
 .highlight-item strong {
-  color: #222222;
+  color: #f9d97a;
   font-size: 0.95rem;
   margin-bottom: 4px;
 }
 
 .highlight-item small {
-  color: #555555;
+  color: #eee;
   font-size: 0.8rem;
 }

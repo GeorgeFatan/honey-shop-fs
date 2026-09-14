@@ -16,22 +16,31 @@
 .contact-header {
   text-align: center;
   margin-bottom: 35px;
-  background-color: #ffffff; /* Alb solid, luminos */
+  background: rgba(255, 255, 255, 0.12);
   padding: 20px 40px;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #f0e2b6;
+  border: 1px solid #ffe9a0;
+  backdrop-filter: blur(4px);
+}
+
+.contact-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .contact-title {
-  color: #111111;
+  color: #f9d97a;
   margin: 0 0 8px 0;
   font-size: 2.3rem;
   font-weight: bold;
+  text-shadow: 0 0 6px rgba(249, 217, 122, 0.6);
 }
 
 .contact-subtitle {
-  color: #b38b00;
+  color: #ecd176;
   font-weight: 600;
   margin: 0;
   font-size: 1.1rem;
@@ -56,19 +65,20 @@
 
 /* Cardul alb solid */
 .contact-card {
-  background-color: #ffffff; /* Alb solid pentru a nu trece fundalul întunecat prin el */
+  background-color: rgba(255, 255, 255, 0.12);
   border-radius: 16px;
   padding: 30px 20px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid #f0e2b6;
+  transition: transform 0.3s ease;
+  border: 1px solid #ecd176;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(1px);
 }
 
 /* Efect de hover pe carduri */
@@ -81,14 +91,14 @@
 .contact-icon-wrapper {
   font-size: 2.5rem;
   margin-bottom: 12px;
-  background-color: #fffdf0;
+  background-color: #d6ca7b;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #f2e3b6;
+  border: 1px solid #e4d094;
 }
 
 .contact-card-title {
@@ -98,7 +108,7 @@
 }
 
 .contact-card-value {
-  color: #b38b00;
+  color: #fcff2e;
   font-weight: bold;
   font-size: 1.05rem;
   margin: 0 0 6px 0;
@@ -106,6 +116,6 @@
 }
 
 .contact-card-subtext {
-  color: #666666;
+  color: #f0e9e9;
   font-size: 0.85rem;
 }
