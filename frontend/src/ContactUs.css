@@ -7,9 +7,7 @@
   align-items: center;
   padding: 40px 20px;
   box-sizing: border-box;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  position: relative;
 }
 
 /* Caseta de antet (Titlu + Subtitlu) */
@@ -22,6 +20,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid #ffe9a0;
   backdrop-filter: blur(4px);
+  z-index: 1;
 }
 
 .contact-container::before {
@@ -29,6 +28,7 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
 }
 
 .contact-title {
@@ -53,6 +53,7 @@
   gap: 24px;
   max-width: 900px;
   width: 100%;
+  z-index: 1;
 }
 
 /* Link-urile care înfășoară cardurile interactive */

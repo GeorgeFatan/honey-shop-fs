@@ -1,17 +1,8 @@
-import backgroundImageHoney from "../assets/backgroundImageBuna.png";
 import "../AboutPage.css";
 
 export default function AboutPage() {
   return (
-    <div
-      className="about-container"
-      style={{
-        backgroundImage: `url(${backgroundImageHoney})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <div className="about-container">
       <div className="about-card">
         <h1 className="about-title">Povestea Noastră</h1>
 

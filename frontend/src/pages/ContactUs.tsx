@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundImageHoney from "../assets/backgroundImageBuna.png";
 import "../ContactUs.css";
 
 interface ContactItem {
@@ -22,7 +21,7 @@ export default function ContactPage() {
       title: "WhatsApp",
       value: "+40 712 345 678",
       subtext: "Luni - Vineri: 08:00 - 16:00",
-      link: "https://wa.me/40712345678", // Deschide chat direct pe WhatsApp
+      link: "https://wa.me/40712345678",
     },
     {
       // Logo Gmail SVG (Roșu oficial #EA4335)
@@ -88,10 +87,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div
-      className="contact-container"
-      style={{ backgroundImage: `url(${backgroundImageHoney})` }}
-    >
+    <div className="contact-container">
       {/* Antet Titlu */}
       <div className="contact-header">
         <h1 className="contact-title">Contactează-ne</h1>
