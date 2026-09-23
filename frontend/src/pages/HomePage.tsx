@@ -2,25 +2,31 @@ import "../HomePage.css";
 import miereSalcam from "../assets/miereSalcam.png";
 import miereTei from "../assets/miereTei.png";
 import mierePoliFlora from "../assets/mierePoliFlora.png";
+import "../ContactUs.css";
 
 export default function HomePage() {
   return (
     <div className="home-container">
       {/* HERO SECTION */}
       <section className="hero-section">
-        <h1 className="hero-title">
+        <div className="title-wrapper">
+<h1 className="hero-title">
           Bogdan Miere – Miere proaspata din Mărginimea Sibiului
         </h1>
         <p className="hero-description">
-          Miere naturală, direct din stupii noștri, produsă cu grijă în inima
-          Sibiului.
+          Miere naturală, direct din stupii noștri, produsă cu grijă în inima Sibiului.
         </p>
+        </div>
+  
       </section>
 
       {/* PRODUCTS SECTION */}
       <section className="products-section">
-        <h2 className="section-title">Produsele Noastre</h2>
 
+        <div className="subtitle-wrapper">
+          <h2 className="section-title">Produsele Noastre</h2>
+        </div>
+      
         <div className="product-grid">
           <div className="product-card">
             <img src={mierePoliFlora} alt="Miere Polifloră" />
