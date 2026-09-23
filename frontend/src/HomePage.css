@@ -44,6 +44,38 @@ body {
   margin: 0 auto;
 }
 
+.title-wrapper{
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  border: 1px solid #ecd176;
+  padding: 15px 80px;
+  backdrop-filter: blur(4px);
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-bottom: 30px
+}
+
+.subtitle-wrapper{
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  border: 1px solid #ecd176;
+  padding: 1px 30px;
+  backdrop-filter: blur(4px);
+  margin-bottom: 30px;
+  box-sizing: border-box; 
+  margin-bottom: 30px
+}
+.subtitle{
+  font-size: 2rem;
+  color: #f9d97a;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(249,217,122,0.6);
+  margin: 0;
+}
+
 /* PRODUCTS SECTION */
 .products-section {
   position: relative;
