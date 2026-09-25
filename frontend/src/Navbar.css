@@ -24,6 +24,7 @@
   align-items: center;
   padding: 0 30px;
   box-sizing: border-box;
+  padding: 0 40px;
 }
 
 /* LOGO + TITLU */
@@ -31,6 +32,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 1;
+  
+}
+
+.navbar-right{
+  justify-content: flex-end;
+  display: flex;
+  flex: 1;
 }
 
 .navbar-logo {

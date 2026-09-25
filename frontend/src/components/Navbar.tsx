@@ -16,6 +16,7 @@ export default function Navbar() {
                 src={logoBogdan}
                 alt="Bogdan Miere Logo"
                 className="navbar-logo"
+                
               />
             </a>
             <span
@@ -35,7 +36,7 @@ export default function Navbar() {
         </button>
 
         {/* LINKURI */}
-        <div className="navbar-dreapta">
+        <div className="navbar-right">
           <nav className={`navbar-links ${isOpen ? "open" : ""}`}>
             <a href="/orar">Programul Nostru</a>
             <a href="/contact">Contact Us</a>
