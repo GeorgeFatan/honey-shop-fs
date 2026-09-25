@@ -16,7 +16,6 @@
   z-index: 0;
 }
 
-/* Cardul alb - alb solid, identic ca luminozitate cu cel din Orar */
 .about-card {
   background: rgba(255, 255, 255, 0.12);
   padding: 40px;
@@ -56,7 +55,6 @@
   text-align: justify;
 }
 
-/* Cele 3 casete - fundal galben-miere deschis și luminos */
 .about-highlights {
   display: flex;
   justify-content: space-around;
@@ -72,7 +70,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.12); /* Culoare deschisă crem/galben */
+  background: rgba(255, 255, 255, 0.12); 
   border: 1px solid #f0e2b6;
   padding: 15px 10px;
   border-radius: 12px;
@@ -94,3 +92,59 @@
   color: #eee;
   font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px 8px;
+  }
+
+  .about-card {
+    padding: 18px 12px;
+    max-width: 88%;
+    border-radius: 10px;
+    margin-top: 60px; 
+  }
+
+  .about-title {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  .about-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+  }
+
+  .about-text p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .about-highlights {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .highlight-item {
+    padding: 10px 8px;
+    border-radius: 8px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .highlight-item span {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .highlight-item strong {
+    font-size: 0.85rem;
+  }
+
+  .highlight-item small {
+    font-size: 0.7rem;
+  }
+}
+
