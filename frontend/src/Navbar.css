@@ -92,7 +92,7 @@
   color: #f9d97a;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE CSS Media Queries*/
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
@@ -112,14 +112,16 @@
     top: 70px;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+
+    background: rgba(0,0, 0.75); /*opac */
+    backdrop-filter: blur(6px);
     flex-direction: column;
     align-items: center;
     gap: 15px;
     padding: 20px 0;
     display: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(249,217,122, 0.4); 
   }
 
   .navbar-links.open {
