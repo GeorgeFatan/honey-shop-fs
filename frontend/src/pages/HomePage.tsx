@@ -1,7 +1,9 @@
 import "../HomePage.css";
-import miereSalcam from "../assets/miereSalcam.png";
-import miereTei from "../assets/miereTei.png";
-import mierePoliFlora from "../assets/mierePoliFlora.png";
+import miereSalcam35 from "../assets/miereSalcam35.png";
+import miereNuca1 from "../assets/miereNuca1.png";
+import miereNuca35 from "../assets/miereNuca35.png";
+import mierePoliflora from "../assets/mierePoliflora1.png";
+import mierePoliflora35 from "../assets/mierePoliflora35.png";
 import "../ContactUs.css";
 
 export default function HomePage() {
@@ -29,21 +31,33 @@ export default function HomePage() {
       
         <div className="product-grid">
           <div className="product-card">
-            <img src={mierePoliFlora} alt="Miere Polifloră" />
-            <h3>Miere Polifloră</h3>
+            <img src={mierePoliflora} alt="Miere Polifloră" />
+            <h3>Miere Polifloră 1Kg</h3>
             <p>Miere bogată și aromată, obținută din flori sălbatice.</p>
           </div>
 
           <div className="product-card">
-            <img src={miereSalcam} alt="Miere de Salcâm" />
-            <h3>Miere de Salcâm</h3>
+            <img src={mierePoliflora35} alt="Miere Polifloră" />
+            <h3>Miere Polifloră 350g</h3>
+            <p>Miere bogată și aromată, obținută din flori sălbatice.</p>
+          </div>
+
+          <div className="product-card">
+            <img src={miereSalcam35} alt="Miere de Salcâm" />
+            <h3>Miere de Salcâm 350g</h3>
             <p>Miere delicată, cu note florale fine.</p>
           </div>
 
           <div className="product-card">
-            <img src={miereTei} alt="Miere de Tei" />
-            <h3>Miere de Tei</h3>
-            <p>Miere dulce și catifelată, din flori de tei.</p>
+            <img src={miereNuca1} alt="Miere cu nucă" />
+            <h3>Miere cu nucă 1Kg</h3>
+            <p>Miere dulce și catifelată, cu un adaos gustos de nucă.</p>
+          </div>
+
+          <div className="product-card">
+            <img src={miereNuca35} alt="Miere cu nucă" />
+            <h3>Miere cu nucă 350g</h3>
+            <p>Miere dulce și catifelată, cu un adaos gustos de nucă.</p>
           </div>
         </div>
       </section>

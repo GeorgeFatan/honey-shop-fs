@@ -33,7 +33,7 @@ body {
 .hero-title {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #f9d97a; /* auriu miere */
+  color: #f9d97a;
   margin-bottom: 15px;
 }
 
@@ -44,20 +44,19 @@ body {
   margin: 0 auto;
 }
 
-.title-wrapper{
+.title-wrapper {
   display: inline-block;
   background: rgba(255, 255, 255, 0.12);
   border-radius: 16px;
   border: 1px solid #ecd176;
   padding: 15px 80px;
   backdrop-filter: blur(4px);
-  margin-bottom: 40px;
-  box-sizing: border-box;
   margin-top: 40px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
-.subtitle-wrapper{
+.subtitle-wrapper {
   display: inline-block;
   background: rgba(255, 255, 255, 0.12);
   border-radius: 16px;
@@ -65,14 +64,14 @@ body {
   padding: 1px 30px;
   backdrop-filter: blur(4px);
   margin-bottom: 30px;
-  box-sizing: border-box; 
-  margin-bottom: 30px
+  box-sizing: border-box;
 }
-.subtitle{
+
+.subtitle {
   font-size: 2rem;
   color: #f9d97a;
   font-weight: bold;
-  text-shadow: 0 0 6px rgba(249,217,122,0.6);
+  text-shadow: 0 0 6px rgba(249, 217, 122, 0.6);
   margin: 0;
 }
 
@@ -84,6 +83,7 @@ body {
   text-align: center;
 }
 
+/* SECTION TITLE */
 .section-title {
   font-size: 2rem;
   margin-bottom: 40px;
@@ -106,31 +106,38 @@ body {
   width: 220px;
   transition: transform 0.3s ease;
   backdrop-filter: blur(4px);
+  box-sizing: border-box;
 }
 
 .product-card:hover {
   transform: scale(1.05);
 }
 
+/* PRODUCT IMAGE */
 .product-card img {
   width: 100%;
+  height: 290px;
+  display: block;
   border-radius: 8px;
   margin-bottom: 10px;
   object-fit: cover;
+  object-position: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* PRODUCT TITLE */
 .product-card h3 {
   margin-bottom: 8px;
   color: #f9d97a;
 }
 
+/* PRODUCT DESCRIPTION */
 .product-card p {
   font-size: 0.95rem;
   color: #eee;
 }
 
-/* ABOUT PAGE CSS*/
+/* ABOUT PAGE CSS */
 .about-container {
   position: relative;
   min-height: 100vh;
@@ -172,4 +179,85 @@ body {
   width: 100%;
   text-align: center;
   padding-right: 40px;
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 768px) {
+  /* HERO SECTION */
+  .hero-section {
+    padding: 60px 10px 20px;
+  }
+
+  .title-wrapper {
+    padding: 12px 18px;
+    width: 85%;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
+    max-width: 80%;
+  }
+
+  /* SUBTITLE */
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  /* PRODUCTS SECTION */
+  .products-section {
+    padding: 20px 10px;
+    margin-top: -20px;
+    overflow: hidden;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  /* PRODUCT GRID */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    justify-items: center;
+  }
+
+  /* PRODUCT CARD */
+  .product-card {
+    width: 100%;
+    padding: 10px 6px;
+    border-radius: 8px;
+    margin: 0;
+  }
+
+  /* PRODUCT IMAGE - MOBILE */
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* PRODUCT TITLE */
+  .product-card h3 {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+
+  /* PRODUCT DESCRIPTION */
+  .product-card p {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
 }
