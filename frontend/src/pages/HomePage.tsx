@@ -31,31 +31,31 @@ export default function HomePage() {
       
         <div className="product-grid">
           <div className="product-card">
-            <img src={mierePoliflora} alt="Miere Polifloră" />
+            <img src={mierePoliflora} alt="Miere Polifloră" loading="eager"/>
             <h3>Miere Polifloră 1Kg</h3>
             <p>Miere bogată și aromată, obținută din flori sălbatice.</p>
           </div>
 
           <div className="product-card">
-            <img src={mierePoliflora35} alt="Miere Polifloră" />
+            <img src={mierePoliflora35} alt="Miere Polifloră" loading="eager"/>
             <h3>Miere Polifloră 350g</h3>
             <p>Miere bogată și aromată, obținută din flori sălbatice.</p>
           </div>
 
           <div className="product-card">
-            <img src={miereSalcam35} alt="Miere de Salcâm" />
+            <img src={miereSalcam35} alt="Miere de Salcâm" loading="eager"/>
             <h3>Miere de Salcâm 350g</h3>
             <p>Miere delicată, cu note florale fine.</p>
           </div>
 
           <div className="product-card">
-            <img src={miereNuca1} alt="Miere cu nucă" />
+            <img src={miereNuca1} alt="Miere cu nucă" loading="eager"/>
             <h3>Miere cu nucă 1Kg</h3>
             <p>Miere dulce și catifelată, cu un adaos gustos de nucă.</p>
           </div>
 
           <div className="product-card">
-            <img src={miereNuca35} alt="Miere cu nucă" />
+            <img src={miereNuca35} alt="Miere cu nucă" loading="eager"/>
             <h3>Miere cu nucă 350g</h3>
             <p>Miere dulce și catifelată, cu un adaos gustos de nucă.</p>
           </div>
