@@ -1,4 +1,5 @@
 import "../Footer.css";
+import logoFooter from "../assets/LogoBogdan.png";
 
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-brand">
                 <div className="footer-logo">
-                    <span className="logo-circle">🍯</span>
+                     <img className="logo-circle" src={logoFooter} loading="lazy"/>
                     <h2>Bogdan - Miere din Marginimea Sibiului</h2>
                 </div>
                 <p className="tagline">

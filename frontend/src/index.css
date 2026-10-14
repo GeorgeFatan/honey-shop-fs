@@ -1,7 +1,7 @@
-/* #root {
+#root {
   min-height: 100vh;
-  background-image: url("/frontend/src/assets/backgroundImageBuna.png");
+   background-image: url("/backgroundImageBuna.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #f7f3e8;
-} */
+}
