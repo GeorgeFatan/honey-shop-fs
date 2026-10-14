@@ -1,9 +1,9 @@
 import "../HomePage.css";
-import miereSalcam35 from "../assets/miereSalcam35.png";
-import miereNuca1 from "../assets/miereNuca1.png";
-import miereNuca35 from "../assets/miereNuca35.png";
-import mierePoliflora from "../assets/mierePoliflora1.png";
-import mierePoliflora35 from "../assets/mierePoliflora35.png";
+import miereSalcam35 from "../assets/miereSalcam35.avif";
+import miereNuca1 from "../assets/miereNuca1.avif";
+import miereNuca35 from "../assets/miereNuca35.avif";
+import mierePoliflora from "../assets/mierePoliflora1.avif";
+import mierePoliflora35 from "../assets/mierePoliflora35.avif";
 import "../ContactUs.css";
 
 export default function HomePage() {
