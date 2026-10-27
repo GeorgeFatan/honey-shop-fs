@@ -73,10 +73,22 @@
   min-width: 300px;
 }
 
+/* link-uri in starea lor normala*/
+.footer-links a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+/*in timpul hover-ului*/
+.footer-links a:hover{
+  transform: scale(1.1);
+}
+
 .column h3 {
   font-size: 15px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #b7b933;
 }
 
 .column ul {
@@ -94,8 +106,10 @@
   transition: 0.3s;
 }
 
+
 .column a:hover {
   color: #f5b700;
+  transform: scale(1.1);
 }
 
 .footer-bottom {
