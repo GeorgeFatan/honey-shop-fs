@@ -92,6 +92,20 @@
   color: #f9d97a;
 }
 
+/* Link activ effect */
+.navbar-links a.active-link {
+  background: #f9d97a;
+  color: #333;
+  box-shadow: 0 0 10px rgba(249, 217, 122, 0.6);
+}
+
+.navbar-links a.active-link:hover {
+  background: #f9d97a;
+  color: #333;
+  box-shadow: 0 0 10px rgba(249, 217, 122, 0.6);
+}
+
+
 /* RESPONSIVE CSS Media Queries*/
 @media (max-width: 768px) {
   .navbar-container {
