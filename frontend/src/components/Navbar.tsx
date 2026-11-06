@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../Navbar.css";
 import logoBogdan from "../assets/LogoBogdan.png";
+import {NavLink} from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,14 +12,14 @@ export default function Navbar() {
         {/* LOGO + TITLU */}
         <div className="navbar-left">
           <div className="navbar-brand">
-            <a href="/">
+            <NavLink to="/">
               <img
                 src={logoBogdan}
                 alt="Bogdan Miere Logo"
                 className="navbar-logo"
                 
               />
-            </a>
+            </NavLink>
             <span
               style={{ marginRight: "10px" }}
               className="navbar-title"
@@ -38,9 +39,15 @@ export default function Navbar() {
         {/* LINKURI */}
         <div className="navbar-right">
           <nav className={`navbar-links ${isOpen ? "open" : ""}`}>
-            <a href="/orar">Programul Nostru</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/about">About Us</a>
+            <NavLink to="/orar" className={({ isActive }) => isActive ? "active-link" : ""}>
+              Programul Nostru
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "active-link" : ""}>
+              Contacteză-ne
+            </NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : ""}>
+              Despre Noi
+            </NavLink>
           </nav>
         </div>
       </div>
