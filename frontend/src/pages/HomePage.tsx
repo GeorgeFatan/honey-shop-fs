@@ -37,6 +37,16 @@ export default function HomePage() {
             <img src={mierePoliflora} alt="Miere Polifloră" loading="eager"/>
             <h3>Miere Polifloră</h3>
             <p>Miere bogată și aromată, obținută din flori sălbatice.</p>
+
+            <a className="quick-order-button"
+            href="https://wa.me/40712345678?text=Salut! Doresc să comand un borcan de miere poliflora 1kg."
+            target="_blank"
+            rel ="noopener noreferrer"> 
+            
+             Comandă la telefon
+            
+            </a>
+
           </div>
 
           <div className="product-card">
@@ -46,6 +56,14 @@ export default function HomePage() {
             <img src={mierePoliflora35} alt="Miere Polifloră" loading="eager"/>
             <h3>Miere Polifloră</h3>
             <p>Miere bogată și aromată, obținută din flori sălbatice.</p>
+             <a className="quick-order-button"
+            href="https://wa.me/40712345678?text=Salut! Doresc să comand un borcan de miere poliflora de 350g."
+            target="_blank"
+            rel ="noopener noreferrer"> 
+            
+             Comandă la telefon
+            
+            </a>
           </div>
 
           <div className="product-card">
@@ -55,6 +73,14 @@ export default function HomePage() {
             <img src={miereSalcam35} alt="Miere de Salcâm" loading="eager"/>
             <h3>Miere de Salcâm</h3>
             <p>Miere delicată, cu note florale fine.</p>
+             <a className="quick-order-button"
+            href="https://wa.me/40712345678?text=Salut! Doresc să comand un borcan de miere de salcam de 350g."
+            target="_blank"
+            rel ="noopener noreferrer"> 
+            
+             Comandă la telefon
+            
+            </a>
           </div>
 
           <div className="product-card">
@@ -64,6 +90,14 @@ export default function HomePage() {
             <img src={miereNuca1} alt="Miere cu nucă" loading="eager"/>
             <h3>Miere cu nucă</h3>
             <p>Miere dulce și catifelată, cu un adaos gustos de nucă.</p>
+             <a className="quick-order-button"
+            href="https://wa.me/40712345678?text=Salut! Doresc să comand un borcan de miere cu nuca de 1kg."
+            target="_blank"
+            rel ="noopener noreferrer"> 
+            
+             Comandă la telefon
+            
+            </a>
           </div>
 
           <div className="product-card">
@@ -73,6 +107,14 @@ export default function HomePage() {
             <img src={miereNuca35} alt="Miere cu nucă" loading="eager"/>
             <h3>Miere cu nucă</h3>
             <p>Miere dulce și catifelată, cu un adaos gustos de nucă.</p>
+             <a className="quick-order-button"
+            href="https://wa.me/40712345678?text=Salut! Doresc să comand un borcan de miere cu nuca de 350g."
+            target="_blank"
+            rel ="noopener noreferrer"> 
+            
+             Comandă la telefon
+            
+            </a>
           </div>
         </div>
       </section>
